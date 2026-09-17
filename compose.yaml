@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app            # live-edit: source changes show up without a rebuild
+    stdin_open: true
+    tty: true
+    command: bash

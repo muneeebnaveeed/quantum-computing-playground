@@ -1,0 +1,8 @@
+name: quantum
+channels:
+  - conda-forge
+  - nodefaults   # conda-forge only: no Anaconda ToS prompt, fully open-source channel
+dependencies:
+  - python=3.11.3
+  - ipython
+  - pytest
