@@ -8,3 +8,9 @@ def test_python_version_is_pinned():
 
 def test_ipython_importable():
     import IPython  # noqa: F401
+
+
+def test_qiskit_pinned():
+    import qiskit
+
+    assert qiskit.__version__ == "2.1.2", qiskit.__version__
