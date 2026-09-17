@@ -6,7 +6,10 @@ dependencies:
   - python=3.11.3
   - ipython
   - pytest
+  - matplotlib=3.11.2
+  - ipykernel=7.3.0   # lets VS Code run notebooks inside the container
   - pip
   - pip:
       - qiskit==2.1.2
       - qiskit-aer==0.17.2
+      - pylatexenc==2.11   # required by qiskit's matplotlib circuit drawer

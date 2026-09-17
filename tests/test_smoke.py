@@ -18,3 +18,22 @@ def test_qiskit_pinned():
 
 def test_qiskit_aer_importable():
     from qiskit_aer import AerSimulator  # noqa: F401
+
+
+def test_matplotlib_importable():
+    import matplotlib  # noqa: F401
+
+
+def test_qiskit_mpl_drawer_works(tmp_path):
+    import matplotlib
+
+    matplotlib.use("Agg")
+    from qiskit import QuantumCircuit
+
+    qc = QuantumCircuit(1)
+    qc.h(0)
+    qc.draw(output="mpl").savefig(tmp_path / "c.png")
+
+
+def test_ipykernel_importable():
+    import ipykernel  # noqa: F401
