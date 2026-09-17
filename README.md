@@ -1,7 +1,7 @@
 # quantum-computing-playground
 
 Scratch space for the *Introduction to Quantum Computing* lab (INBPA9963-21, Fall 2026).
-Python 3.11.3 + qiskit 2.1.2 in a conda env, run inside Docker so nothing has to be installed locally.
+Python 3.11.3 + qiskit 2.1.2 + qiskit-aer 0.17.2 in a conda env, run inside Docker so nothing has to be installed locally.
 
 ## Setup
 
@@ -17,7 +17,7 @@ docker compose build                       # first time, and after editing envir
 docker compose run --rm app                # interactive shell inside the env
 docker compose run --rm app ipython        # IPython REPL
 docker compose run --rm app python labs/<file>.py
-docker compose run --rm app pytest         # smoke test: Python 3.11.3 + qiskit 2.1.2 import
+docker compose run --rm app pytest         # smoke test: Python 3.11.3 + qiskit + qiskit-aer import
 ```
 
 The repo is bind-mounted at `/app`, so edits on the host are visible immediately.

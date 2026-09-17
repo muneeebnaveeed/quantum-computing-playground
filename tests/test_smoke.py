@@ -14,3 +14,7 @@ def test_qiskit_pinned():
     import qiskit
 
     assert qiskit.__version__ == "2.1.2", qiskit.__version__
+
+
+def test_qiskit_aer_importable():
+    from qiskit_aer import AerSimulator  # noqa: F401

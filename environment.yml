@@ -9,3 +9,4 @@ dependencies:
   - pip
   - pip:
       - qiskit==2.1.2
+      - qiskit-aer==0.17.2
